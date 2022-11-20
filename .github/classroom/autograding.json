@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Add item tc",
+      "setup": "javac Main.java",
+      "run": "java -classpath .:target/dependency/* Main",
+      "input": "1\r\n5\r\n1\r\n2\r\n4\r\n5\r\n",
+      "output": "5,1,2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Update tc",
+      "setup": "javac Main.java",
+      "run": "java -classpath .:target/dependency/* Main",
+      "input": "1\r\nB\r\n2\r\n3\r\n3\r\n2\r\nA\r\n7\r\n4\r\n5\r\n",
+      "output": "A,2,7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Exit tc",
+      "setup": "javac Main.java",
+      "run": "java -classpath .:target/dependency/* Main",
+      "input": "5\r\n",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
